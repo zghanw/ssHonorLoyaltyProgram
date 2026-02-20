@@ -94,8 +94,8 @@ export default function GiftsPage() {
             await deleteGift(id);
             toast.success('Gift deleted');
             fetchGifts();
-        } catch {
-            toast.error('Failed to delete');
+        } catch (err) {
+            toast.error(err.response?.data?.detail || 'Failed to delete');
         }
     };
 

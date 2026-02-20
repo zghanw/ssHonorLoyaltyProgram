@@ -1,5 +1,6 @@
 from typing import List
 from fastapi import APIRouter, Depends, HTTPException
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
 from ..database import get_db
@@ -40,5 +41,9 @@ def delete_gift(gift_id: str, db: Session = Depends(get_db), _: models.Staff = D
     g = db.query(models.Gift).filter(models.Gift.id == gift_id).first()
     if not g:
         raise HTTPException(404, "Gift not found")
-    db.delete(g)
-    db.commit()
+    try:
+        db.delete(g)
+        db.commit()
+    except IntegrityError:
+        db.rollback()
+        raise HTTPException(400, "Cannot delete gift because it has linked redemptions.")
