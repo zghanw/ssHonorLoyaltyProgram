@@ -95,7 +95,7 @@ Start the development server:
 ```bash
 npm run dev
 ```
-*The application will run at `http://localhost:5173`*
+*The application will run at `http://localhost:3000`*
 
 ## 🔐 Default Credentials
 
