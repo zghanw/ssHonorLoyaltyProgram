@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import {
     LayoutDashboard, Users, Gift, Star, History, LogOut,
 } from 'lucide-react';
+import logo from '../../assets/HONORLOGO.jpg';
 import { useAuth } from '../../context/AuthContext';
 
 const navItems = [
@@ -19,10 +20,10 @@ export default function Sidebar() {
             {/* Logo */}
             <div className="flex items-center gap-3 px-5 py-5 border-b border-surface-border">
                 <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center">
-                    <Star size={16} className="text-white" />
+                    <img src={logo} alt="Logo" className="w-8 h-8 rounded-lg" />
                 </div>
                 <div>
-                    <p className="text-white font-semibold text-sm leading-tight">LoyaltyHub</p>
+                    <p className="text-white font-semibold text-sm leading-tight">Loyalty System</p>
                     <p className="text-gray-500 text-xs">Staff Portal</p>
                 </div>
             </div>

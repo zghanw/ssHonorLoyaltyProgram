@@ -37,7 +37,7 @@ export default function LoginPage() {
                     <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center shadow-lg shadow-brand-900/40 mb-4">
                         <img src={logo} alt="Logo" className="rounded-2xl w-full h-full object-cover" />
                     </div>
-                    <h1 className="text-2xl font-bold text-gray-100">HONOR Loyalty Program</h1>
+                    <h1 className="text-2xl font-bold text-gray-100">HONOR Loyalty System</h1>
                     <p className="text-gray-500 text-sm mt-1">Staff Portal — Log in to continue</p>
                 </div>
 

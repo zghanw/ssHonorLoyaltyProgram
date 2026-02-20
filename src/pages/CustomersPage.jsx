@@ -32,7 +32,7 @@ function AddCustomerModal({ onClose, onCreated }) {
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <div>
                         <label className="label">Full Name *</label>
-                        <input className="input" value={form.full_name} onChange={e => setForm(f => ({ ...f, full_name: e.target.value }))} required placeholder="e.g. John Smith" />
+                        <input className="input" value={form.full_name} onChange={e => setForm(f => ({ ...f, full_name: e.target.value }))} required placeholder="e.g. Lim Xiao Ming" />
                     </div>
                     <div>
                         <label className="label">Phone Number *</label>
@@ -40,7 +40,7 @@ function AddCustomerModal({ onClose, onCreated }) {
                     </div>
                     <div>
                         <label className="label">Email (optional)</label>
-                        <input className="input" type="email" value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))} placeholder="e.g. john@email.com" />
+                        <input className="input" type="email" value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))} placeholder="e.g. mingming@gmail.com" />
                     </div>
                     <div className="flex gap-3 pt-2">
                         <button type="button" onClick={onClose} className="btn-secondary flex-1 justify-center">Cancel</button>
