@@ -29,7 +29,7 @@ export default function DashboardPage() {
 
     return (
         <AppLayout>
-            <TopBar title="Dashboard" subtitle="Overview of your loyalty program" />
+            <TopBar title="Dashboard" subtitle="Overview of your loyalty management system" />
             <main className="flex-1 p-6 space-y-6">
                 {/* Stats Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">

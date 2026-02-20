@@ -36,7 +36,7 @@ function AddCustomerModal({ onClose, onCreated }) {
                     </div>
                     <div>
                         <label className="label">Phone Number *</label>
-                        <input className="input" value={form.phone_number} onChange={e => setForm(f => ({ ...f, phone_number: e.target.value }))} required placeholder="e.g. +60123456789" />
+                        <input className="input" value={form.phone_number} onChange={e => setForm(f => ({ ...f, phone_number: e.target.value }))} required placeholder="e.g. 0123456789" />
                     </div>
                     <div>
                         <label className="label">Email (optional)</label>
